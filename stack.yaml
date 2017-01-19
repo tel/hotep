@@ -1,0 +1,8 @@
+resolver: lts-7.16
+packages:
+- '.'
+
+extra-deps: []
+flags: {}
+extra-package-dbs: []
+compiler: ghc-8.0.2
