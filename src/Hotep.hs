@@ -72,7 +72,7 @@ monitor = undefined
 -- handled by the current process from that @Monitor@ (e.g., clears the
 -- mailbox). (Note, in Erlang this is called "demonitor", but we use @unmonitor@
 -- for parallelism with @unlink@).
-unmonitor :: Monitor-> Script m x ()
+unmonitor :: Monitor -> Script m x ()
 unmonitor = undefined
 
 -- | Send a message to a target process after a given interval.
