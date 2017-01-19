@@ -26,7 +26,6 @@ module Hotep (
 
 ) where
 
-import Data.Void
 import Data.Time.Clock (DiffTime)
 import Hotep.Internal.Types
 import Hotep.Internal.Config
