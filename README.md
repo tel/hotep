@@ -16,6 +16,8 @@ write robust single-node applications.
 **Hotep is currently non-functional software.** No warranties are made about its
 accuracy or completeness.
 
+See more detail in the [documentation](https://github.com/tel/hotep/blob/master/docs/Intro.md).
+
 ## Contributing
 
 Hotep code governance is not yet well-defined but should implement some
