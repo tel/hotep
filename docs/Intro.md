@@ -1,7 +1,7 @@
 
 # Hotep, an introduction
 
-Hotep bring single node Erlang-like process management to Haskell as a shallow
+Hotep brings single node Erlang-like process management to Haskell as a shallow
 DSL. This can help in architecting `IO` operations in the large in your
 applications while ensuring robustness.
 
