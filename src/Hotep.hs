@@ -24,6 +24,7 @@ module Hotep (
   , trapExitsWith
   , passExits
   , block
+  , selectiveReceiveOrTimeout 
 
 ) where
 
