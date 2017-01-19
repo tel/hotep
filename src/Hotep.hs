@@ -23,6 +23,7 @@ module Hotep (
   , unmonitor
   , trapExitsWith
   , passExits
+  , block
 
 ) where
 
@@ -112,3 +113,7 @@ trapExitsWith = undefined
 -- Idempotent.
 passExits :: Script m x ()
 passExits = undefined
+
+-- | Execute an @IO@ action in the current thread, blocking until it returns.
+block :: IO r -> Script m x r
+block = undefined
