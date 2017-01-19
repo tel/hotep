@@ -32,7 +32,7 @@ instance Monad (Script m x) where
   return = pure
   (>>=) = undefined
 
-data MonitorRef
+data Monitor
 
 data Exit x
   = ExitReason x

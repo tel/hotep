@@ -47,7 +47,7 @@ spawnLink = undefined
 
 -- | Spawn a process and immediately create a monitor for it. This is similar to
 -- calling @spawn@ and @monitor@ sequentially, but atomic.
-spawnMonitor :: ((MonitorRef, Exit x) -> m') -> Script m x r -> Script m' x' (Pid m x, MonitorRef)
+spawnMonitor :: ((Monitor, Exit x) -> m') -> Script m x r -> Script m' x' (Pid m x, Monitor)
 spawnMonitor = undefined
 
 -- | Bidirectionally links the current process with a target process.
@@ -65,14 +65,14 @@ unlink = undefined
 -- | Creates a one-time-use monitor on a target process. Exit signals arising
 -- from that process will be mapped to input messages on the current process.
 -- Any number of monitors may be made and monitors behave unidirectionally.
-monitor :: ((MonitorRef, Exit x) -> m') -> Pid m x -> Script m' x' MonitorRef
+monitor :: ((Monitor, Exit x) -> m') -> Pid m x -> Script m' x' Monitor
 monitor = undefined
 
 -- | Removes a monitor and guarantees that no monitoring messages will be
--- handled by the current process from that @MonitorRef@ (e.g., clears the
+-- handled by the current process from that @Monitor@ (e.g., clears the
 -- mailbox). (Note, in Erlang this is called "demonitor", but we use @unmonitor@
 -- for parallelism with @unlink@).
-unmonitor :: MonitorRef -> Script m x ()
+unmonitor :: Monitor-> Script m x ()
 unmonitor = undefined
 
 -- | Send a message to a target process after a given interval.
