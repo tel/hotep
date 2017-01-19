@@ -1,13 +1,13 @@
 name:                hotep
 version:             0.1.0.0
-synopsis:            Initial project template from stack
+synopsis:            "Fail Fast" process management for Haskell; inspired by Erlang
 description:         Please see README.md
-homepage:            https://github.com/githubuser/hotep#readme
-license:             BSD3
+homepage:            https://github.com/tel/hotep#readme
+license:             MPL2
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2017 Author name here
+author:              Joseph Abrahamson
+maintainer:          me@jspha.com
+copyright:           2017 Joseph Abrahamson
 category:            Web
 build-type:          Simple
 extra-source-files:  README.md
@@ -34,4 +34,4 @@ test-suite hotep-test
 
 source-repository head
   type:     git
-  location: https://github.com/githubuser/hotep
+  location: https://github.com/tel/hotep
